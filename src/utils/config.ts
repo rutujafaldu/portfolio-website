@@ -35,6 +35,7 @@ const siteConfig = {
     location: "Atlanta, GA, United States",
     email: "faldurutuja@gmail.com",
     resume: "/resume.pdf", // put your resume file in public/
+    linkedIn: "https://www.linkedin.com/in/rutujafaldu",
     bio: `Full-stack engineer with experience building production-grade React apps, microfrontend architectures, and backend services. Passionate about clean code, performance, and mentoring teammates.`,
     //about:`I’m a passionate full-stack developer who loves crafting seamless user experiences and bringing ideas to life through code. With a strong foundation in both frontend and backend development, I enjoy transforming complex challenges into clean, elegant solutions. I’m driven by curiosity, always eager to learn new technologies, and committed to mentoring others to help them grow and excel as engineers.`,
     about: `Hi, I’m Rutuja — a curious and creative full-stack developer who loves turning ideas into interactive, meaningful digital experiences. I’m passionate about building intuitive UIs, writing clean and efficient code, and bringing designs to life with a touch of creativity. I enjoy tackling complex problems, simplifying them into elegant solutions, and sharing what I learn by mentoring others. When I’m not coding, you’ll probably find me exploring new tech tools or brainstorming ways to make products more user-friendly.`,

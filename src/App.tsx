@@ -8,10 +8,12 @@ import GmailIcon from "./assets/gmail.svg";
 import DownloadIcon from "./assets/download.svg";
 import UpArrowDark from "./assets/up-arrow-dark.svg";
 import UpArrowLight from "./assets/up-arrow-light.svg";
+import LinkedInIcon from "./assets/linkedin.svg";
 import pdf from "./assets/resume.pdf";
 
 import EducationTimeline from "./EducationTimeline";
 import SidebarMenu from "./SideBarMenu";
+import Contact from "./Contact";
 import siteConfig from "./utils/config";
 
 const fadeIn = {
@@ -54,7 +56,7 @@ function Hero() {
               </a>
             </div>
 
-            <div className="mt-10 flex items-center gap-6 text-sm dark:text-muted text-gray-800">
+            <div className="mt-10 flex flex-wrap items-center gap-6 text-sm dark:text-muted text-gray-800">
               <div className="flex items-center gap-2">
                 <img src={LocationPin} className="w-6 h-6" />
                 <span>{siteConfig.location}</span>
@@ -66,6 +68,12 @@ function Hero() {
                   className="hover:underline"
                 >
                   {siteConfig.email}
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <img src={LinkedInIcon} className="w-6 h-6" />
+                <a href={siteConfig.linkedIn} className="hover:underline">
+                  {siteConfig.linkedIn}
                 </a>
               </div>
             </div>
@@ -254,66 +262,6 @@ function Experience() {
   );
 }
 
-function Contact() {
-  return (
-    <motion.section
-      variants={fadeIn}
-      initial="hidden"
-      whileInView="show"
-      id="contact"
-      className="py-20 bg-gray-100 dark:bg-dark-900"
-    >
-      <div className="max-w-3xl mx-auto px-6">
-        <SectionTitle>Contact</SectionTitle>
-        <p className="dark:text-muted text-gray-800">
-          I'm open to job opportunities. Send me a message or email me directly.
-        </p>
-
-        <form className="mt-6 grid grid-cols-1 gap-4">
-          <div className="grid sm:grid-cols-2 gap-4">
-            <input
-              className="p-3 rounded-lg dark:bg-gray-900 bg-white shadow-md placeholder:text-gray-500 focus:outline-accent"
-              placeholder="Your name"
-            />
-            <input
-              className="p-3 rounded-lg dark:bg-gray-900 bg-white shadow-md placeholder:text-gray-500 focus:outline-accent"
-              placeholder="Your email"
-            />
-          </div>
-          <textarea
-            className="p-3 rounded-lg dark:bg-gray-900 bg-white shadow-md placeholder:text-gray-500 focus:outline-accent"
-            rows={6}
-            placeholder="Message"
-          />
-          <div className="flex items-center gap-4">
-            <button
-              type="button"
-              className="px-5 py-3 rounded-lg bg-accent text-white font-semibold"
-            >
-              Send Message
-            </button>
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="text-sm dark:text-muted text-gray-800"
-            >
-              Or email: {siteConfig.email}
-            </a>
-          </div>
-        </form>
-
-        {/* <div className="mt-8 flex gap-4">
-          <a href="#" className="px-4 py-2 rounded-lg border">
-            GitHub
-          </a>
-          <a href="#" className="px-4 py-2 rounded-lg border">
-            LinkedIn
-          </a>
-        </div> */}
-      </div>
-    </motion.section>
-  );
-}
-
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
@@ -389,7 +337,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
-        <Contact />
+        <Contact fadeIn={fadeIn} />
       </main>
 
       <footer className="py-8">
