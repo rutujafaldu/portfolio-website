@@ -301,14 +301,14 @@ function Contact() {
           </div>
         </form>
 
-        <div className="mt-8 flex gap-4">
+        {/* <div className="mt-8 flex gap-4">
           <a href="#" className="px-4 py-2 rounded-lg border">
             GitHub
           </a>
           <a href="#" className="px-4 py-2 rounded-lg border">
             LinkedIn
           </a>
-        </div>
+        </div> */}
       </div>
     </motion.section>
   );

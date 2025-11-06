@@ -71,7 +71,7 @@ const siteConfig = {
         description:
           "Built a portfolio website using React and Tailwind CSS to showcase my work and deployed it on Azure.",
         tech: ["React", "TypeScript", "Tailwind CSS", "Azure"],
-        github: "#",
+        github: "https://github.com/rutujafaldu",
       },
       {
         id: "p2",
@@ -87,7 +87,7 @@ const siteConfig = {
           "Mongo DB",
           "Leaflet API",
         ],
-        github: "#",
+        github: "https://github.com/rutujafaldu94",
       },
       {
         id: "p3",
@@ -95,7 +95,7 @@ const siteConfig = {
         description:
           "Implemented graph partitioning algorithms on the DBLP database to enhance the Sense Making process by grouping similar nodes. Developed an optimized dynamic partitioning approach and integrated Neo4j as the graph database, implementing Min-Arborescence and Steiner Tree algorithms to improve efficiency and generate the core functionality.",
         tech: ["Python", "Machine Learning"],
-        github: "#",
+
       },
     ] as Project[],
     experiences: [
